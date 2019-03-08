@@ -1,0 +1,145 @@
+\hypertarget{classBitMatrix}{}\section{Bit\+Matrix Class Reference}
+\label{classBitMatrix}\index{Bit\+Matrix@{Bit\+Matrix}}
+
+
+Inheritance diagram for Bit\+Matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classBitMatrix__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBitMatrix_aea3afaf70111c302f23971bbb84dee10}{Bit\+Matrix} (istream \&in, size\+\_\+t n, size\+\_\+t m)
+\item 
+\hyperlink{classBitMatrix_a47e8b65693dc2e86541d0098232654a7}{Bit\+Matrix} (const string \&filename, size\+\_\+t n, size\+\_\+t m)
+\item 
+\hyperlink{classBitMatrix_aa264bc0bfe4a54ca8e0cafcd17aaddd1}{$\sim$\+Bit\+Matrix} ()
+\item 
+size\+\_\+t \hyperlink{classBitMatrix_a45b01a2a1e0cd1227cbe06d0c47c35d1}{get\+Height} () const
+\item 
+size\+\_\+t \hyperlink{classBitMatrix_ae4bf5529a6676a836a0ff965285e9907}{get\+Width} () const
+\item 
+size\+\_\+t \hyperlink{classBitMatrix_ac4ddfe5f94dba2904d9d6319bbdd8012}{get\+Chunks} () const
+\item 
+const vector$<$ vector$<$ \hyperlink{main_8cpp_a49d1cb44c18ad3e6cc52845f905e6181}{ull} $>$ $>$ \& \hyperlink{classBitMatrix_a167706d1d6576f29382fc55b5c99884d}{get\+Matrix} () const
+\item 
+int \hyperlink{classBitMatrix_a4ec563a3bf6d62141d719ebeed5348e8}{at} (size\+\_\+t i, size\+\_\+t j) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ \hyperlink{main_8cpp_a49d1cb44c18ad3e6cc52845f905e6181}{ull} $>$ $>$ \hyperlink{classBitMatrix_abe5132a2524a8c5d5e5a11d0f4753bc6}{matrix}
+\item 
+size\+\_\+t \hyperlink{classBitMatrix_a546978092da7a641ac9c23daa88a31ae}{height}
+\item 
+size\+\_\+t \hyperlink{classBitMatrix_a8f75a335960dd7af6fc791f43bc3a8c1}{width}
+\item 
+size\+\_\+t \hyperlink{classBitMatrix_af4a0d4517ff5a485c5787150f9e6a545}{chunks}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classBitMatrix_aa35d89b587731633f4de5309b083689b}{operator$<$$<$} (ostream \&os, const \hyperlink{classBitMatrix}{Bit\+Matrix} \&bm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple class for binary matrix stored as bit sets 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBitMatrix_aea3afaf70111c302f23971bbb84dee10}\label{classBitMatrix_aea3afaf70111c302f23971bbb84dee10}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!Bit\+Matrix@{Bit\+Matrix}}
+\index{Bit\+Matrix@{Bit\+Matrix}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{Bit\+Matrix()}{BitMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bit\+Matrix\+::\+Bit\+Matrix (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBitMatrix_a47e8b65693dc2e86541d0098232654a7}\label{classBitMatrix_a47e8b65693dc2e86541d0098232654a7}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!Bit\+Matrix@{Bit\+Matrix}}
+\index{Bit\+Matrix@{Bit\+Matrix}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{Bit\+Matrix()}{BitMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bit\+Matrix\+::\+Bit\+Matrix (\begin{DoxyParamCaption}\item[{const string \&}]{filename,  }\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBitMatrix_aa264bc0bfe4a54ca8e0cafcd17aaddd1}\label{classBitMatrix_aa264bc0bfe4a54ca8e0cafcd17aaddd1}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!````~Bit\+Matrix@{$\sim$\+Bit\+Matrix}}
+\index{````~Bit\+Matrix@{$\sim$\+Bit\+Matrix}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{$\sim$\+Bit\+Matrix()}{~BitMatrix()}}
+{\footnotesize\ttfamily Bit\+Matrix\+::$\sim$\+Bit\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBitMatrix_a4ec563a3bf6d62141d719ebeed5348e8}\label{classBitMatrix_a4ec563a3bf6d62141d719ebeed5348e8}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!at@{at}}
+\index{at@{at}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily int Bit\+Matrix\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{i,  }\item[{size\+\_\+t}]{j }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBitMatrix_ac4ddfe5f94dba2904d9d6319bbdd8012}\label{classBitMatrix_ac4ddfe5f94dba2904d9d6319bbdd8012}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!get\+Chunks@{get\+Chunks}}
+\index{get\+Chunks@{get\+Chunks}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Chunks()}{getChunks()}}
+{\footnotesize\ttfamily size\+\_\+t Bit\+Matrix\+::get\+Chunks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBitMatrix_a45b01a2a1e0cd1227cbe06d0c47c35d1}\label{classBitMatrix_a45b01a2a1e0cd1227cbe06d0c47c35d1}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily size\+\_\+t Bit\+Matrix\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBitMatrix_a167706d1d6576f29382fc55b5c99884d}\label{classBitMatrix_a167706d1d6576f29382fc55b5c99884d}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!get\+Matrix@{get\+Matrix}}
+\index{get\+Matrix@{get\+Matrix}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Matrix()}{getMatrix()}}
+{\footnotesize\ttfamily const vector$<$vector$<$\hyperlink{main_8cpp_a49d1cb44c18ad3e6cc52845f905e6181}{ull}$>$ $>$\& Bit\+Matrix\+::get\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBitMatrix_ae4bf5529a6676a836a0ff965285e9907}\label{classBitMatrix_ae4bf5529a6676a836a0ff965285e9907}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily size\+\_\+t Bit\+Matrix\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classBitMatrix_aa35d89b587731633f4de5309b083689b}\label{classBitMatrix_aa35d89b587731633f4de5309b083689b}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{classBitMatrix}{Bit\+Matrix} \&}]{bm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBitMatrix_af4a0d4517ff5a485c5787150f9e6a545}\label{classBitMatrix_af4a0d4517ff5a485c5787150f9e6a545}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!chunks@{chunks}}
+\index{chunks@{chunks}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{chunks}{chunks}}
+{\footnotesize\ttfamily size\+\_\+t Bit\+Matrix\+::chunks\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBitMatrix_a546978092da7a641ac9c23daa88a31ae}\label{classBitMatrix_a546978092da7a641ac9c23daa88a31ae}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!height@{height}}
+\index{height@{height}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily size\+\_\+t Bit\+Matrix\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBitMatrix_abe5132a2524a8c5d5e5a11d0f4753bc6}\label{classBitMatrix_abe5132a2524a8c5d5e5a11d0f4753bc6}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily vector$<$vector$<$\hyperlink{main_8cpp_a49d1cb44c18ad3e6cc52845f905e6181}{ull}$>$ $>$ Bit\+Matrix\+::matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+The matrix where all data is stored \mbox{\Hypertarget{classBitMatrix_a8f75a335960dd7af6fc791f43bc3a8c1}\label{classBitMatrix_a8f75a335960dd7af6fc791f43bc3a8c1}} 
+\index{Bit\+Matrix@{Bit\+Matrix}!width@{width}}
+\index{width@{width}!Bit\+Matrix@{Bit\+Matrix}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily size\+\_\+t Bit\+Matrix\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8cpp}{main.\+cpp}\end{DoxyCompactItemize}

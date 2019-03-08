@@ -1,0 +1,179 @@
+\hypertarget{classPartialBitMatrix}{}\section{Partial\+Bit\+Matrix Class Reference}
+\label{classPartialBitMatrix}\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+
+
+Inheritance diagram for Partial\+Bit\+Matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classPartialBitMatrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Partial\+Bit\+Matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classPartialBitMatrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPartialBitMatrix_a0bdc388b54ece3f0af522140f1d8fa3f}{Partial\+Bit\+Matrix} (istream \&in, size\+\_\+t n, size\+\_\+t m)
+\item 
+\hyperlink{classPartialBitMatrix_a9c57752eb3d83c96694d6016ab51b93f}{Partial\+Bit\+Matrix} (const string \&filename, size\+\_\+t n, size\+\_\+t m)
+\item 
+bool \hyperlink{classPartialBitMatrix_a14711125645f4395fbf834ba10e7e538}{delete\+\_\+column} (size\+\_\+t col)
+\item 
+bool \hyperlink{classPartialBitMatrix_a29612f1d11f0e53c889b23ec9db445ba}{delete\+\_\+row} (size\+\_\+t row)
+\item 
+size\+\_\+t \hyperlink{classPartialBitMatrix_ac6e4c5182f8c04323cd2fde465021756}{get\+Cur\+\_\+height} () const
+\item 
+size\+\_\+t \hyperlink{classPartialBitMatrix_a9bd1557769214ae8442b57c561015a96}{get\+Cur\+\_\+width} () const
+\item 
+const set$<$ size\+\_\+t $>$ \& \hyperlink{classPartialBitMatrix_ab3ffe36bd4034cb0b28f53064bde5309}{get\+Available\+\_\+rows} () const
+\item 
+const set$<$ size\+\_\+t $>$ \& \hyperlink{classPartialBitMatrix_ab6d7d19a7c87ec6c397b336121f37712}{get\+Available\+\_\+cols} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPartialBitMatrix_ab0e8e1dc7a71ab0b9203fd13bc748c0f}{delete\+\_\+zero\+\_\+columns} ()
+\item 
+void \hyperlink{classPartialBitMatrix_a9e08f3b006f85bcec3853a1df320decd}{delete\+\_\+wider\+\_\+rows} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ size\+\_\+t $>$ \hyperlink{classPartialBitMatrix_a424c7cd6f2af62cf9356e53a7898c051}{available\+\_\+rows}
+\item 
+set$<$ size\+\_\+t $>$ \hyperlink{classPartialBitMatrix_a1c44d05b37ba0acb4fbf05ae39d44de3}{available\+\_\+cols}
+\item 
+size\+\_\+t \hyperlink{classPartialBitMatrix_ad6f7fd9eb7ecd63d44419c8388cdebf1}{cur\+\_\+height}
+\item 
+size\+\_\+t \hyperlink{classPartialBitMatrix_a5684506338c5c27b8936f42e34107267}{cur\+\_\+width}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classPartialBitMatrix_ad47fa6477b5477654c809695f108d52e}{operator$<$$<$} (ostream \&os, const \hyperlink{classPartialBitMatrix}{Partial\+Bit\+Matrix} \&bm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPartialBitMatrix_a0bdc388b54ece3f0af522140f1d8fa3f}\label{classPartialBitMatrix_a0bdc388b54ece3f0af522140f1d8fa3f}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{Partial\+Bit\+Matrix()}{PartialBitMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Partial\+Bit\+Matrix\+::\+Partial\+Bit\+Matrix (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_a9c57752eb3d83c96694d6016ab51b93f}\label{classPartialBitMatrix_a9c57752eb3d83c96694d6016ab51b93f}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{Partial\+Bit\+Matrix()}{PartialBitMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Partial\+Bit\+Matrix\+::\+Partial\+Bit\+Matrix (\begin{DoxyParamCaption}\item[{const string \&}]{filename,  }\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPartialBitMatrix_a14711125645f4395fbf834ba10e7e538}\label{classPartialBitMatrix_a14711125645f4395fbf834ba10e7e538}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!delete\+\_\+column@{delete\+\_\+column}}
+\index{delete\+\_\+column@{delete\+\_\+column}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{delete\+\_\+column()}{delete\_column()}}
+{\footnotesize\ttfamily bool Partial\+Bit\+Matrix\+::delete\+\_\+column (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_a29612f1d11f0e53c889b23ec9db445ba}\label{classPartialBitMatrix_a29612f1d11f0e53c889b23ec9db445ba}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!delete\+\_\+row@{delete\+\_\+row}}
+\index{delete\+\_\+row@{delete\+\_\+row}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{delete\+\_\+row()}{delete\_row()}}
+{\footnotesize\ttfamily bool Partial\+Bit\+Matrix\+::delete\+\_\+row (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartialBitMatrix_a9e08f3b006f85bcec3853a1df320decd}\label{classPartialBitMatrix_a9e08f3b006f85bcec3853a1df320decd}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!delete\+\_\+wider\+\_\+rows@{delete\+\_\+wider\+\_\+rows}}
+\index{delete\+\_\+wider\+\_\+rows@{delete\+\_\+wider\+\_\+rows}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{delete\+\_\+wider\+\_\+rows()}{delete\_wider\_rows()}}
+{\footnotesize\ttfamily void Partial\+Bit\+Matrix\+::delete\+\_\+wider\+\_\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_ab0e8e1dc7a71ab0b9203fd13bc748c0f}\label{classPartialBitMatrix_ab0e8e1dc7a71ab0b9203fd13bc748c0f}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!delete\+\_\+zero\+\_\+columns@{delete\+\_\+zero\+\_\+columns}}
+\index{delete\+\_\+zero\+\_\+columns@{delete\+\_\+zero\+\_\+columns}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{delete\+\_\+zero\+\_\+columns()}{delete\_zero\_columns()}}
+{\footnotesize\ttfamily void Partial\+Bit\+Matrix\+::delete\+\_\+zero\+\_\+columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_ab6d7d19a7c87ec6c397b336121f37712}\label{classPartialBitMatrix_ab6d7d19a7c87ec6c397b336121f37712}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!get\+Available\+\_\+cols@{get\+Available\+\_\+cols}}
+\index{get\+Available\+\_\+cols@{get\+Available\+\_\+cols}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Available\+\_\+cols()}{getAvailable\_cols()}}
+{\footnotesize\ttfamily const set$<$size\+\_\+t$>$\& Partial\+Bit\+Matrix\+::get\+Available\+\_\+cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_ab3ffe36bd4034cb0b28f53064bde5309}\label{classPartialBitMatrix_ab3ffe36bd4034cb0b28f53064bde5309}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!get\+Available\+\_\+rows@{get\+Available\+\_\+rows}}
+\index{get\+Available\+\_\+rows@{get\+Available\+\_\+rows}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Available\+\_\+rows()}{getAvailable\_rows()}}
+{\footnotesize\ttfamily const set$<$size\+\_\+t$>$\& Partial\+Bit\+Matrix\+::get\+Available\+\_\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_ac6e4c5182f8c04323cd2fde465021756}\label{classPartialBitMatrix_ac6e4c5182f8c04323cd2fde465021756}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!get\+Cur\+\_\+height@{get\+Cur\+\_\+height}}
+\index{get\+Cur\+\_\+height@{get\+Cur\+\_\+height}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Cur\+\_\+height()}{getCur\_height()}}
+{\footnotesize\ttfamily size\+\_\+t Partial\+Bit\+Matrix\+::get\+Cur\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_a9bd1557769214ae8442b57c561015a96}\label{classPartialBitMatrix_a9bd1557769214ae8442b57c561015a96}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!get\+Cur\+\_\+width@{get\+Cur\+\_\+width}}
+\index{get\+Cur\+\_\+width@{get\+Cur\+\_\+width}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{get\+Cur\+\_\+width()}{getCur\_width()}}
+{\footnotesize\ttfamily size\+\_\+t Partial\+Bit\+Matrix\+::get\+Cur\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPartialBitMatrix_ad47fa6477b5477654c809695f108d52e}\label{classPartialBitMatrix_ad47fa6477b5477654c809695f108d52e}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{classPartialBitMatrix}{Partial\+Bit\+Matrix} \&}]{bm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPartialBitMatrix_a1c44d05b37ba0acb4fbf05ae39d44de3}\label{classPartialBitMatrix_a1c44d05b37ba0acb4fbf05ae39d44de3}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!available\+\_\+cols@{available\+\_\+cols}}
+\index{available\+\_\+cols@{available\+\_\+cols}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{available\+\_\+cols}{available\_cols}}
+{\footnotesize\ttfamily set$<$size\+\_\+t$>$ Partial\+Bit\+Matrix\+::available\+\_\+cols\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_a424c7cd6f2af62cf9356e53a7898c051}\label{classPartialBitMatrix_a424c7cd6f2af62cf9356e53a7898c051}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!available\+\_\+rows@{available\+\_\+rows}}
+\index{available\+\_\+rows@{available\+\_\+rows}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{available\+\_\+rows}{available\_rows}}
+{\footnotesize\ttfamily set$<$size\+\_\+t$>$ Partial\+Bit\+Matrix\+::available\+\_\+rows\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_ad6f7fd9eb7ecd63d44419c8388cdebf1}\label{classPartialBitMatrix_ad6f7fd9eb7ecd63d44419c8388cdebf1}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!cur\+\_\+height@{cur\+\_\+height}}
+\index{cur\+\_\+height@{cur\+\_\+height}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{cur\+\_\+height}{cur\_height}}
+{\footnotesize\ttfamily size\+\_\+t Partial\+Bit\+Matrix\+::cur\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPartialBitMatrix_a5684506338c5c27b8936f42e34107267}\label{classPartialBitMatrix_a5684506338c5c27b8936f42e34107267}} 
+\index{Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}!cur\+\_\+width@{cur\+\_\+width}}
+\index{cur\+\_\+width@{cur\+\_\+width}!Partial\+Bit\+Matrix@{Partial\+Bit\+Matrix}}
+\subsubsection{\texorpdfstring{cur\+\_\+width}{cur\_width}}
+{\footnotesize\ttfamily size\+\_\+t Partial\+Bit\+Matrix\+::cur\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8cpp}{main.\+cpp}\end{DoxyCompactItemize}
