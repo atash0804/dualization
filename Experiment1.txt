@@ -1,0 +1,46 @@
+//L1 has shape (m, n), L2 has shape (l, n)
+
+N = 10 M = 10 L = 10
+DUALIZATION:
+Dualization time: 0.002269
+Cov total(1): 33
+Overall time: 0.002342
+
+DOUBLE DUALIZATION
+Cov total(2): 33
+Double time:  0.002854
+_______________________________________________
+
+N = 15 M = 15 L = 15
+DUALIZATION:
+Dualization time: 0.024604
+Cov total(1): 4937
+Overall time: 0.025568
+
+DOUBLE DUALIZATION
+Cov total(2): 4937
+Double time:  0.402201
+_______________________________________________
+
+N = 20 M = 20 L = 20
+DUALIZATION:
+Dualization time: 0.316965
+Cov total(1): 636972
+Overall time: 0.429613
+
+DOUBLE DUALIZATION
+Cov total(2): 636972
+Double time:  119.127
+_______________________________________________
+
+N = 30 M = 20 L = 10
+DUALIZATION:
+Dualization time: 1.25683
+Cov total(1): 1891395
+Overall time: 1.39191
+
+DOUBLE DUALIZATION
+Cov total(2): 1891395
+Double time:  1045.7
+_______________________________________________
+

@@ -3,4 +3,4 @@ project(dualization)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(dualization main.cpp)
+add_executable(dualization dualization.cpp experiment_ord_double.cpp dualization.h)
