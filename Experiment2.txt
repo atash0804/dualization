@@ -1,0 +1,52 @@
+N = 10 M = 10 L = 10
+DUALIZATION:
+Dualization time: 0.00167
+Cov total(1): 33
+Overall time: 0.001709
+
+DUALIZATION EXIST:
+Dualization time: 0.001563
+Cov total(1): 3
+Overall time: 0.00158
+
+_______________________________________________
+
+N = 15 M = 15 L = 15
+DUALIZATION:
+Dualization time: 0.018022
+Cov total(1): 4937
+Overall time: 0.018704
+
+DUALIZATION EXIST:
+Dualization time: 0.017239
+Cov total(1): 191
+Overall time: 0.017524
+
+_______________________________________________
+
+N = 20 M = 20 L = 20
+DUALIZATION:
+Dualization time: 0.280714
+Cov total(1): 636972
+Overall time: 0.369356
+
+DUALIZATION EXIST:
+Dualization time: 0.278254
+Cov total(1): 1230
+Overall time: 0.278874
+
+_______________________________________________
+
+N = 30 M = 30 L = 30
+DUALIZATION:
+Dualization time: 10.8893
+Cov total(1): 481740881
+Overall time: 134.038
+
+DUALIZATION EXIST:
+Dualization time: 10.7458
+Cov total(1): 39752
+Overall time: 10.7663
+
+_______________________________________________
+
